@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi" class="wusteam.com">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Công cụ whois, kiểm tra, tra cứu thông tin tên miền">
+    <meta name="author" content="ThanhDieuTV">
+    <link rel="shortcut icon" href="./public/assets/img/logo.avif" type="image/x-icon">
+    <meta name="Keywords" content="kiem tra ten mien, check domain, domain check, tra cuu ten mien, tra ten mien" />
+    <title>Tra cứu tên miền - Check thông tin domain</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="./public/assets/css/font-awesome.min.css">
+    <!-- theme css -->
+    <link rel="stylesheet" href="./public/assets/css/theme.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="./public/assets/css/style.css?v=1">
+    <!-- cdn dialog -->
+    <link rel="stylesheet" href="./public/assets/css/ws.toast.css">
+</head>
+ <body class="nk-body npc-invest bg-lighter dark-mode"> <!-- Xoá class dark-mode nếu muốn về giao diện light -->
+    <!-- loader gif -->
+    <div class="loader" style="display: none;"><img src="./public/assets/img/loader.gif"></div>
+    <div class="nk-wrap ">
+        <div class="nk-content nk-content-lg nk-content-fluid">
+            <!-- container @w -->
+            <div id="app" class="container-xl">
+              <div class="col-sm-12 col-md-10 col-xl-8 center-block mt-5">
+                <div class="card card-preview">
+                  <div class="card-inner mt-3 mb-3">
+                    <div class="nya-title nk-ibx-action-item progress-rating"><span class="nk-menu-text font-weight-bold">Whois Domain</span></div>
+                    <div class="form-group">
+                      <label class="form-label">Nhập Tên Miền:</label>
+                      <div class="form-control-wrap">
+                        <div class="input-group">
+                          <input type="text" placeholder="Vui lòng nhập tên miền" autocomplete="off" id="domain_name" class="form-control form-control-lg">
+                          <div class="input-group-append">
+                            <button id="find-domain" class="btn btn-lg btn-dim btn-outline-primary text-large">Kiểm Tra Domain</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Kết quả -->
+                <div class="card card-preview result" style="display:none;">
+                    <div class="card-inner mt-3">
+                      <div class="nya-title nk-ibx-action-item progress-rating">
+                        <span class="nk-menu-text font-weight-bold">Kết Quả</span>
+                      </div>
+                      <div class="border p-2" id="result"></div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        <!-- content @d -->
+        <div class="nk-footer nk-footer-fluid bg-lighter">
+            <div class="container-xl">
+                <div class="nk-footer-wrap">
+                    <div class="nk-footer-copyright"> &copy; 2024 - Code by Creative </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer @e -->
+    </div>
+    <!-- wrap @e -->
+    <!-- jquery 3.6.0 -->
+    <script src="./public/assets/js/jquery-3.6.0.min.js"></script>
+    <!-- index js -->
+    <script src="./public/assets/js/index.js"></script>
+   <!-- cdn dialog -->
+    <script src="./public/assets/js/ws.toast.js"></script>
+    <!-- boostrap js -->
+    <script src="./public/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
